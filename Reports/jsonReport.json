@@ -1,0 +1,133 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-02-09T20:41:15.587Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2809371800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.Hook.setup()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "User should be directed to sign in page",
+        "description": "",
+        "id": "tradejournal-login;user-should-be-directed-to-sign-in-page",
+        "after": [
+          {
+            "result": {
+              "duration": 305943900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.Hook.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 498912800,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I am on TradeJournal sign in page",
+            "match": {
+              "location": "step_definitions.TradeJournalSteps.i_am_on_trade_journal_sign_in_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 131118100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "The sign in button displays",
+            "match": {
+              "location": "step_definitions.TradeJournalSteps.the_sign_in_button_displays()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 214562400,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I enter valid username \"Salam\" and valid password \"SuperSalam123!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Salam\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"SuperSalam123!\"",
+                  "offset": 50
+                }
+              ],
+              "location": "step_definitions.TradeJournalSteps.i_enter_valid_username_and_valid_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 908482100,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I click on sign in button",
+            "match": {
+              "location": "step_definitions.TradeJournalSteps.i_click_on_sign_in_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 56619700,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I should be directed to home page",
+            "match": {
+              "location": "step_definitions.TradeJournalSteps.i_should_be_directed_to_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag"
+          },
+          {
+            "name": "@TradeJournalLogin"
+          }
+        ]
+      }
+    ],
+    "name": "TradeJournal Login",
+    "description": "  I want to be able to login with valid credentials.",
+    "id": "tradejournal-login",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/TradeJournalLogin.feature",
+    "tags": [
+      {
+        "name": "@tag",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

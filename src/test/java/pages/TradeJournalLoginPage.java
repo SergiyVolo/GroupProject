@@ -21,7 +21,15 @@ public class TradeJournalLoginPage {
 	@FindBy(xpath = "//button[@type='submit']")
 	public WebElement signinBtn;
 	
-	@FindBy (xpath = "//*[@id=\"navbarSupportedContent\"]/ul/li[1]/a")
+	@FindBy (xpath = "//*[contains(text(),'Logout')]")
+	public WebElement logoutBtn;
+
+	@FindBy (xpath = "(//*[@class='btn btn-danger btn-sm'])[1]")
+	public WebElement deleteBtn;
+	
+	@FindBy (xpath = "(//*[@class='nav-link'])[1]")
 	public WebElement homePageMessage;
 
+	
+	
 }

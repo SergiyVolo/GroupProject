@@ -1,0 +1,4 @@
+1. Registration module.
+2. Logo on registration/sign in page.
+3. Forgot password/username options.
+3. Background(image) on registration/sign in page.

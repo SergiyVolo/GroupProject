@@ -3,11 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-02-09T20:41:15.587Z",
+        "start_timestamp": "2022-02-11T14:53:39.640Z",
         "before": [
           {
             "result": {
-              "duration": 2809371800,
+              "duration": 2814969900,
               "status": "passed"
             },
             "match": {
@@ -16,13 +16,13 @@
           }
         ],
         "line": 7,
-        "name": "User should be directed to sign in page",
+        "name": "User should be able to delete a raw/record",
         "description": "",
-        "id": "tradejournal-login;user-should-be-directed-to-sign-in-page",
+        "id": "tradejournal-delete-functionality;user-should-be-able-to-delete-a-raw/record",
         "after": [
           {
             "result": {
-              "duration": 305943900,
+              "duration": 357878600,
               "status": "passed"
             },
             "match": {
@@ -35,71 +35,89 @@
         "steps": [
           {
             "result": {
-              "duration": 498912800,
+              "duration": 1743296300,
               "status": "passed"
             },
             "line": 8,
-            "name": "I am on TradeJournal sign in page",
+            "name": "I am signed in with valid username \"Sergiy\" and password \"SuperSergiy123!\"",
             "match": {
-              "location": "step_definitions.TradeJournalSteps.i_am_on_trade_journal_sign_in_page()"
+              "arguments": [
+                {
+                  "val": "\"Sergiy\"",
+                  "offset": 35
+                },
+                {
+                  "val": "\"SuperSergiy123!\"",
+                  "offset": 57
+                }
+              ],
+              "location": "step_definitions.TradeJournalDeleteSteps.i_am_signed_in_with_valid_username_and_password(java.lang.String,java.lang.String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 131118100,
+              "duration": 84430000,
               "status": "passed"
             },
             "line": 9,
-            "name": "The sign in button displays",
+            "name": "The delete button is displayed",
             "match": {
-              "location": "step_definitions.TradeJournalSteps.the_sign_in_button_displays()"
+              "location": "step_definitions.TradeJournalDeleteSteps.the_delete_button_is_displayed()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 214562400,
+              "duration": 78473200,
               "status": "passed"
             },
             "line": 10,
-            "name": "I enter valid username \"Salam\" and valid password \"SuperSalam123!\"",
+            "name": "I click delete button",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"Salam\"",
-                  "offset": 23
-                },
-                {
-                  "val": "\"SuperSalam123!\"",
-                  "offset": 50
-                }
-              ],
-              "location": "step_definitions.TradeJournalSteps.i_enter_valid_username_and_valid_password(java.lang.String,java.lang.String)"
+              "location": "step_definitions.TradeJournalDeleteSteps.i_click_delete_button()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 908482100,
+              "duration": 51653100,
               "status": "passed"
             },
             "line": 11,
-            "name": "I click on sign in button",
+            "name": "Message: \"Are you sure you want to delete this record?\" should be displayed",
             "match": {
-              "location": "step_definitions.TradeJournalSteps.i_click_on_sign_in_button()"
+              "arguments": [
+                {
+                  "val": "\"Are you sure you want to delete this record?\"",
+                  "offset": 9
+                }
+              ],
+              "location": "step_definitions.TradeJournalDeleteSteps.message_should_be_displayed(java.lang.String)"
             },
-            "keyword": "And "
+            "keyword": "Then "
           },
           {
             "result": {
-              "duration": 56619700,
+              "duration": 26816600,
               "status": "passed"
             },
             "line": 12,
-            "name": "I should be directed to home page",
+            "name": "I click on Cancel",
             "match": {
-              "location": "step_definitions.TradeJournalSteps.i_should_be_directed_to_home_page()"
+              "location": "step_definitions.TradeJournalDeleteSteps.i_click_on_cancel()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 177807300,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "modal should close without deleting the record from  the table view",
+            "match": {
+              "location": "step_definitions.TradeJournalDeleteSteps.modal_should_close_without_deleting_the_record_from_the_table_view()"
             },
             "keyword": "Then "
           }
@@ -109,16 +127,16 @@
             "name": "@tag"
           },
           {
-            "name": "@TradeJournalLogin"
+            "name": "@TradeJournalDelete"
           }
         ]
       }
     ],
-    "name": "TradeJournal Login",
-    "description": "  I want to be able to login with valid credentials.",
-    "id": "tradejournal-login",
+    "name": "TradeJournal delete functionality",
+    "description": "  I want to be able to delete a raw/record",
+    "id": "tradejournal-delete-functionality",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/TradeJournalLogin.feature",
+    "uri": "file:src/test/resources/features/TradeJournalDeletePage.feature",
     "tags": [
       {
         "name": "@tag",

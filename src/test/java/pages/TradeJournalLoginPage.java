@@ -29,6 +29,13 @@ public class TradeJournalLoginPage {
 	
 	@FindBy (xpath = "(//*[@class='nav-link'])[1]")
 	public WebElement homePageMessage;
+	
+	@FindBy (xpath = "//td[contains(text(),'AMZNAPPLSergiy')]")
+	public WebElement oneRecord;
+	
+	
+
+	
 
 	
 	

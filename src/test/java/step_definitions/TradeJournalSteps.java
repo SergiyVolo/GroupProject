@@ -33,6 +33,7 @@ public class TradeJournalSteps {
 	@When("I click on sign in button")
 	public void i_click_on_sign_in_button() {
 		loginPage.signinBtn.click();
+		
 	}
 
 	@Then("I should be directed to home page")
